@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101714">
+  <meta name="description" content="Selected data analysis and automation work by a business analyst and DevOps engineer.">
+  <title>Selected Work | Data &amp; Automation</title>
+  <style>
+    :root { color-scheme: dark; --bg:#101714; --panel:#17211d; --line:#2b3932; --text:#f3f5ef; --muted:#a8b5ac; --accent:#c2f078; --accent2:#89d9bf; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(ellipse at 82% 0%,#24362b 0,transparent 36rem),var(--bg); color:var(--text); font:16px/1.6 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; }
+    a { color:inherit; }
+    .wrap { width:min(1080px,calc(100% - 40px)); margin:auto; }
+    header { display:flex; justify-content:space-between; align-items:center; padding:28px 0; border-bottom:1px solid var(--line); }
+    .brand { font-size:.88rem; letter-spacing:.12em; text-transform:uppercase; font-weight:750; }
+    .nav { display:flex; gap:24px; color:var(--muted); font-size:.9rem; }
+    .nav a { text-decoration:none; }
+    .hero { padding:96px 0 82px; max-width:800px; }
+    .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.14em; font-size:.78rem; font-weight:700; }
+    h1 { font-size:clamp(3rem,8vw,6.2rem); letter-spacing:-.065em; line-height:.98; margin:20px 0 24px; font-weight:650; }
+    .intro { font-size:1.2rem; color:var(--muted); max-width:650px; }
+    .stats { display:flex; gap:48px; flex-wrap:wrap; margin-top:42px; }
+    .stat strong { display:block; color:var(--accent); font-size:1.7rem; letter-spacing:-.04em; }
+    .stat span { color:var(--muted); font-size:.86rem; }
+    section { padding:28px 0 80px; }
+    .section-head { display:flex; align-items:end; justify-content:space-between; margin-bottom:24px; }
+    h2 { font-size:1.8rem; letter-spacing:-.04em; margin:0; }
+    .section-head p { margin:0; color:var(--muted); font-size:.9rem; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+    .card { background:linear-gradient(145deg,rgba(255,255,255,.035),transparent 62%),var(--panel); border:1px solid var(--line); border-radius:18px; padding:28px; min-height:300px; display:flex; flex-direction:column; }
+    .tag { color:var(--accent2); text-transform:uppercase; font-size:.73rem; font-weight:750; letter-spacing:.12em; }
+    .card h3 { font-size:1.45rem; letter-spacing:-.035em; margin:20px 0 10px; }
+    .card p { color:var(--muted); margin:0 0 22px; }
+    .result { margin-top:auto; border-top:1px solid var(--line); padding-top:18px; display:flex; align-items:baseline; gap:10px; }
+    .result strong { font-size:1.65rem; color:var(--accent); letter-spacing:-.04em; }
+    .result span { color:var(--muted); font-size:.86rem; }
+    .method { border:1px solid var(--line); border-radius:18px; padding:28px; display:grid; grid-template-columns:1fr 1.5fr; gap:24px; background:#141d19; }
+    .method p { margin:0; color:var(--muted); }
+    .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+    .step { border-left:2px solid var(--accent); padding-left:12px; font-size:.88rem; color:var(--muted); }
+    .step b { display:block; color:var(--text); margin-bottom:4px; }
+    footer { border-top:1px solid var(--line); padding:30px 0 42px; color:var(--muted); display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; font-size:.9rem; }
+    footer a { text-decoration:none; color:var(--accent); }
+    @media(max-width:700px) { .hero{padding:70px 0 60px}.grid{grid-template-columns:1fr}.method{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.section-head{align-items:start;gap:8px;flex-direction:column}.nav{gap:14px} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">Selected work</div>
+      <nav class="nav" aria-label="Main navigation"><a href="#projects">Projects</a><a href="#approach">Approach</a><a href="#contact">Contact</a></nav>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="intro-title">
+        <div class="eyebrow">Analysis · Automation · Operations</div>
+        <h1 id="intro-title">Clear answers.<br>Reliable systems.</h1>
+        <p class="intro">A selection of practical work turning transaction data and messy archives into useful, verifiable results.</p>
+        <div class="stats" aria-label="Work summary">
+          <div class="stat"><strong>110</strong><span>sales transactions reviewed</span></div>
+          <div class="stat"><strong>30</strong><span>archive files reorganized</span></div>
+          <div class="stat"><strong>2</strong><span>focused deliverables</span></div>
+        </div>
+      </section>
+      <section id="projects" aria-labelledby="projects-title">
+        <div class="section-head"><h2 id="projects-title">Project highlights</h2><p>Recent analysis and data operations</p></div>
+        <div class="grid">
+          <article class="card">
+            <div class="tag">Business analysis</div>
+            <h3>Regional sales performance</h3>
+            <p>Filtered Q1 2025 transaction records to isolate Hyderabad sales in February, then calculated revenue from quantity multiplied by unit price.</p>
+            <div class="result"><strong>3,393</strong><span>February revenue, rounded to the nearest integer</span></div>
+          </article>
+          <article class="card">
+            <div class="tag">Data operations</div>
+            <h3>Category-based archive cleanup</h3>
+            <p>Flattened a nested documentation archive, read each file’s category tag, preserved its source path in the renamed filename, and handled spaces and Unicode names.</p>
+            <div class="result"><strong>30 files</strong><span>reorganized into 14 category folders</span></div>
+          </article>
+        </div>
+      </section>
+      <section id="approach" aria-labelledby="approach-title">
+        <div class="section-head"><h2 id="approach-title">A dependable workflow</h2><p>Traceable from source to result</p></div>
+        <div class="method">
+          <p>Start with the supplied data, apply the stated rules, and check the output against the source before sharing the answer.</p>
+          <div class="steps">
+            <div class="step"><b>Inspect</b>Confirm file structure, fields, and relevant records.</div>
+            <div class="step"><b>Transform</b>Apply explicit filters, calculations, and naming rules.</div>
+            <div class="step"><b>Verify</b>Reconcile counts and produce a repeatable result.</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="contact">
+      <span>Data analysis and automation</span>
+      <a href="mailto:24f2005798@ds.study.iitm.ac.in"><!--email_off-->24f2005798@ds.study.iitm.ac.in<!--/email_off--></a>
+    </footer>
+  </div>
+</body>
+</html>
